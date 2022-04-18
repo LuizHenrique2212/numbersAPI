@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Teste de API</h1>
+            <div class="options">
+                <div class="trv">
+                    <input type="radio" id="trivia" name="endpoint" value="trivia" checked>
+                    <label for="">Trivia</label>
+                    <p>Selecione <i>trivia</i> <br> para uma curiosidade!</p>
+                </div>
+                <div class="mth">
+                    <input type="radio" id="math" name="endpoint" value="math">
+                    <label for="">Math</label>
+                    <p>Selecione <i>math</i> <br> para um fato matemático!</p>
+                </div>
+                <div class="dt">
+                    <input type="radio" id="date" name="endpoint" value="date">
+                    <label for="">Date</label>
+                    <p>Selecione <i>date</i> <br> para uma curiosidade histórica!</p>
+                </div>
+                <div class="yr">
+                    <input type="radio" id="year" name="endpoint" value="year">
+                    <label for="">Year</label>
+                    <p>Selecione <i>year</i> <br> para um fato de acordo <br> com o ano escolhido!</p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <p id="api-response">
+                1º Digite um número no campo abaixo <br> <br>
+                2º Clique no botão enviar <br> <br>
+                O resultado é exibido de acordo com a opção escolhida e o número digitado *em inglês =)*!
+            </p>
+        </main>
+        <div class="coleta-de-dados">
+            <input class="numero" type="number" placeholder="Digite um número aqui">
+            <button onclick="getAPIresponse()">Enviar</button>
+        </div>
+        <footer>
+            <p>Desenvolvido por <a href="https://github.com/LuizHenrique2212">Luiz</a></p>
+            <p>Site referência da API: <a href="http://numbersapi.com/#42">Numbers API</a></p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
